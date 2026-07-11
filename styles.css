@@ -1,0 +1,182 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#3d3737;
+    color:#222;
+    line-height:1.6;
+}
+
+header{
+    background:#222;
+    padding:0;
+}
+
+.banner{
+    display:block;
+    width:100%;
+    height:auto;
+}
+
+nav{
+    background:#5a5a5a;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+    gap:1.5vw;
+    padding:1vw 0;
+    flex-wrap:wrap;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    padding:.5vw 1vw;
+    border-radius:5px;
+    transition:.3s;
+    font-size:1vw;
+}
+
+nav a:hover{
+    background:white;
+    color:#222;
+}
+
+img:not(.banner):not(.arrow):not(.dice):not(.comic){
+    width:100%;
+    max-width:500px;
+    display:block;
+    margin:20px auto;
+}
+
+main{
+    padding:2vw;
+}
+
+.page-layout{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    gap:2vw;
+    width:100%;
+}
+
+.season-menu{
+    width:12vw;
+    min-width:130px;
+    background:#222;
+    color:rgb(240,224,6);
+    padding:1vw;
+    border-radius:10px;
+    position:sticky;
+    top:20px;
+}
+
+.season-menu h3{
+    text-align:center;
+    margin-bottom:15px;
+    font-size:1.3vw;
+}
+
+.season-menu ul{
+    list-style:none;
+}
+
+.season-menu li{
+    margin-bottom:10px;
+}
+
+.season-menu a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    padding:.6vw;
+    border-radius:6px;
+    transition:.3s;
+    font-size:1vw;
+}
+
+.season-menu a:hover,
+.season-menu a.active{
+    background:white;
+    color:#222;
+}
+
+.comic-area{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.comic-controls{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:3vw;
+    margin:1.5vw 0;
+}
+
+.arrow{
+    width:2.5vw;
+    min-width:25px;
+    height:auto;
+    cursor:pointer;
+    transition:.2s;
+}
+
+.arrow:hover{
+    transform:scale(1.1);
+}
+
+.dice{
+    width:2.8vw;
+    min-width:30px;
+    height:auto;
+    cursor:pointer;
+    transition:.2s;
+    filter:brightness(0);
+}
+
+.dice:hover{
+    transform:rotate(20deg) scale(1.1);
+}
+
+select{
+    padding:.5vw 1vw;
+    font-size:1vw;
+}
+
+.comic-container{
+    display:flex;
+    justify-content:center;
+    width:100%;
+}
+
+.comic{
+    width:75vw;
+    height:auto;
+    display:block;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:1vw;
+    font-size:1vw;
+}
+
+@media (max-width:768px){
+
+    nav ul{
+        flex-wrap:wrap;
+    }
+
+}
